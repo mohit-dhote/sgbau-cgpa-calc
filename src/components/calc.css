@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+}
+
+.inner-container > div {
+  flex: 1 1 30%;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inner-container h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.inner-container input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.inner-container input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+#heading-cal {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+#heading-cal::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #3498db;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
